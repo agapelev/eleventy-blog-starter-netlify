@@ -1,81 +1,81 @@
 ---
 type: Post
 slug: post-2
-title: Exploring the Powerful Features of Eleventy (11ty)
-date: '2024-12-06'
+title: Исследуем мощные возможности Eleventy (11ty)
+date: '2025-12-06'
 description: >-
-  This is the default description for the blog post. Customize it to highlight
-  your content!
+  Это описание по умолчанию для записи в блоге. Настройте его, чтобы выделить
+  ваш контент!
 image: /images/post-2.jpg
 ---
 
-As a UI designer who loves minimalist workflows and blazing-fast websites, Eleventy (also known as 11ty) has become one of my go-to tools for building static websites. It’s not just a static site generator — Eleventy’s power lies in its flexibility, speed, and ease of use. In this post, I’ll walk you through some of Eleventy’s standout features and why they’re so valuable for developers, designers, and content creators alike.
+Как дизайнер пользовательских интерфейсов, ценящий минималистичные рабочие процессы и сверхбыстрые сайты, я выбрал Eleventy (или 11ty) как один из основных инструментов для создания статических сайтов. Это не просто генератор — сила Eleventy заключается в его гибкости, скорости и простоте использования. В этом посте я расскажу о ключевых функциях Eleventy и о том, почему они так ценны для разработчиков, дизайнеров и создателей контента.
 
-### 1. Simplicity and Flexibility
-Eleventy doesn’t force you into a rigid structure or a specific JavaScript framework. It’s a **zero-config, flexible framework** that lets you work with the tools you already know and love. Whether you prefer Markdown, Liquid, Nunjucks, or other templating languages, Eleventy accommodates them all.
+### 1. Простота и гибкость
+Eleventy не навязывает жёсткую структуру или конкретный JavaScript-фреймворк. Это **гибкий фреймворк без конфигурации**, который позволяет работать с любимыми инструментами. Markdown, Liquid, Nunjucks и другие языки шаблонов — всё поддерживается.
 
 <!--more-->
 
-- **Template Flexibility**: Use HTML, Markdown, Nunjucks, Liquid, Handlebars, or even JavaScript templates.
-- **Customizability**: Eleventy is highly customizable, letting you adjust build processes and configurations to your needs without any unnecessary bloat.
+- **Гибкость шаблонов**: Используйте HTML, Markdown, Nunjucks, Liquid, Handlebars или даже JavaScript-шаблоны.
+- **Настраиваемость**: Eleventy легко адаптируется под ваши задачи без лишнего кода и зависимостей.
 
-### 2. File-based Routing
-One of the most intuitive features of Eleventy is its **file-based routing** system. The framework automatically generates URLs based on your folder structure and file names. No need to set up complex routing systems or configuration files — Eleventy does it for you.
+### 2. Маршрутизация на основе файлов
+Одна из самых интуитивных функций Eleventy — это **маршрутизация на основе файлов**. Фреймворк автоматически создаёт URL-адреса на основе структуры папок и имён файлов. Никаких сложных конфигураций — всё работает из коробки.
 
-- **Automatic URL generation**: For example, a file located at `/src/posts/my-first-post.md` will automatically be available at `/posts/my-first-post/` on the final site.
-- **Clean URLs**: No need for `.html` file extensions in your URLs. Eleventy strips them out, giving your site a clean and user-friendly URL structure.
+- **Автоматическая генерация URL**: Например, файл `/src/posts/my-first-post.md` будет доступен по адресу `/posts/my-first-post/`.
+- **Чистые URL**: Без расширений `.html` — Eleventy убирает их, создавая аккуратную структуру ссылок.
 
-### 3. Data Files for Dynamic Content
-Eleventy shines when it comes to **dynamic content**. You can create and manage reusable data files in JSON, YAML, or JavaScript formats, and use them across your site. This is perfect for displaying lists, blog posts, or any other type of data that’s stored separately from your templates.
+### 3. Файлы данных для динамического контента
+Eleventy отлично справляется с **динамическим контентом**. Вы можете использовать JSON, YAML или JavaScript-файлы данных и применять их по всему сайту. Это удобно для списков, блогов и других структурированных данных.
 
-- **Centralized Data Storage**: Store all your site’s content in data files (e.g., posts, metadata, navigation, etc.).
-- **Customizable Data**: Eleventy allows you to inject site-wide data into templates, making it easy to create dynamic layouts.
+- **Централизованное хранение данных**: Храните контент сайта в отдельных файлах (посты, метаданные, навигация и т.д.).
+- **Гибкие данные**: Eleventy позволяет внедрять глобальные данные в шаблоны, создавая динамичные макеты.
 
-### 4. Template Inheritance
-Eleventy makes it easy to create a **consistent site layout** through **template inheritance**. This feature allows you to create a base layout file (e.g., a general header, footer, and structure) and extend it in other templates, saving you time and effort in the design process.
+### 4. Наследование шаблонов
+Eleventy упрощает создание **единого макета сайта** благодаря **наследованию шаблонов**. Вы создаёте базовый шаблон (например, с шапкой, подвалом и структурой), а остальные страницы его расширяют.
 
-- **Base Templates**: Create a “master” layout that other pages inherit, so you don’t need to duplicate HTML code across your site.
-- **Partial Templates**: Use reusable components like headers, footers, or sidebars that can be included across different pages.
+- **Базовые шаблоны**: Создайте «мастер»-шаблон, который наследуют другие страницы.
+- **Частичные шаблоны**: Используйте повторно компоненты — шапки, подвал, боковые панели и т.д.
 
-### 5. Incremental Builds
-For large sites, Eleventy’s **incremental builds** feature is a game changer. It allows Eleventy to only rebuild the pages that have changed, rather than rebuilding the entire site. This dramatically speeds up the build process, especially on larger projects.
+### 5. Инкрементальная сборка
+Для крупных сайтов функция **инкрементальной сборки** — настоящая находка. Eleventy пересобирает только изменённые страницы, а не весь сайт, что значительно ускоряет процесс.
 
-- **Speed Boost**: Reduces build times by focusing only on modified content.
-- **Efficient Development Workflow**: Makes development more efficient by updating the site with minimal wait time.
+- **Ускорение сборки**: Обрабатываются только изменённые файлы.
+- **Эффективная разработка**: Быстрое обновление без лишнего ожидания.
 
-### 6. Highly Configurable Build Process
-Eleventy gives you full control over the **build process**, from customizing the input and output directories to adding custom filters or even creating new data files. You can also extend Eleventy’s capabilities with plugins.
+### 6. Гибкая настройка сборки
+Eleventy предоставляет полный контроль над **процессом сборки** — от настройки директорий до создания фильтров и подключения плагинов.
 
-- **Custom Filters**: Add custom functions to manipulate your content, such as formatting dates, generating URLs, etc.
-- **Plugin Support**: Eleventy has an ecosystem of plugins for SEO, image optimization, markdown processing, and more. You can also build your own plugins if needed.
+- **Пользовательские фильтры**: Создавайте функции для обработки контента — форматирование дат, генерация ссылок и т.д.
+- **Поддержка плагинов**: Плагины для SEO, оптимизации изображений, Markdown и многое другое. Можно создавать свои.
 
-### 7. Support for Static & Dynamic Content
-While Eleventy is primarily a static site generator, it doesn’t leave you high and dry if you need dynamic functionality. With its support for **serverless functions** (via integrations like Netlify Functions), you can add dynamic elements (like form submissions or API calls) to your otherwise static site.
+### 7. Поддержка статического и динамического контента
+Хотя Eleventy — генератор статических сайтов, он поддерживает **динамические функции** через серверлес-интеграции (например, Netlify Functions).
 
-- **Serverless Functions**: Integrate dynamic features like contact forms, search functionality, or even a blog comment system.
-- **Integration with Modern Tools**: Seamlessly integrates with tools like Netlify, making it simple to deploy and extend with serverless features.
+- **Серверлес-функции**: Добавляйте формы, поиск, комментарии и другие динамические элементы.
+- **Интеграция с современными инструментами**: Лёгкое развёртывание и расширение через Netlify и другие платформы.
 
-### 8. Preconfigured SEO and Performance Best Practices
-Eleventy automatically helps you build SEO-friendly, fast-loading websites by following web best practices, such as generating clean, semantic HTML and automatically optimizing images. It also integrates easily with third-party services like Netlify, where you can enable advanced performance optimizations.
+### 8. SEO и производительность по умолчанию
+Eleventy помогает создавать **SEO-дружественные и быстрые сайты**, генерируя чистый HTML и оптимизируя изображения. Он легко интегрируется с Netlify для дополнительных улучшений.
 
-- **Image Optimization**: Eleventy integrates with image optimization plugins that automatically resize and compress your images.
-- **SEO-Friendly HTML**: Built-in support for structured data and SEO best practices, including meta tags and sitemap generation.
+- **Оптимизация изображений**: Плагины автоматически изменяют размер и сжимают изображения.
+- **SEO-дружественный HTML**: Поддержка структурированных данных, мета-тегов и генерация sitemap.
 
-### 9. Template and Asset Minification
-Eleventy can automatically **minify** and optimize HTML, CSS, and JavaScript files during the build process, reducing page load times and improving the user experience. This helps ensure that your site is lightweight and performs well on both desktop and mobile devices.
+### 9. Минификация шаблонов и ресурсов
+Eleventy может автоматически **минифицировать** HTML, CSS и JavaScript во время сборки, ускоряя загрузку страниц и улучшая UX.
 
-- **Automatic Minification**: Minify HTML, CSS, and JS files to reduce their size.
-- **Optimize Assets**: Minify and optimize assets to ensure that your site loads as quickly as possible.
+- **Автоматическая минификация**: Уменьшение размера HTML, CSS и JS.
+- **Оптимизация ресурсов**: Быстрая загрузка на всех устройствах.
 
-### 10. Easy Deployment with Netlify
-While Eleventy is all about static site generation, it pairs incredibly well with modern deployment platforms like **Netlify**. With **one-click deployments**, automatic builds, and continuous integration, Netlify takes care of deploying your Eleventy site without any hassle.
+### 10. Простое развёртывание через Netlify
+Eleventy отлично сочетается с платформами вроде **Netlify**. **Развёртывание в один клик**, автоматическая сборка и CI — всё это делает публикацию сайта простой и быстрой.
 
-- **Automatic Builds**: Whenever you push changes to your GitHub repository, Netlify automatically builds and deploys your Eleventy site.
-- **Custom Domains and SSL**: Easily set up custom domains, SSL certificates, and other advanced deployment features.
+- **Автоматическая сборка**: При каждом коммите в GitHub Netlify пересобирает и публикует сайт.
+- **Пользовательские домены и SSL**: Лёгкая настройка доменов и сертификатов.
 
-### Conclusion
-Eleventy’s **simplicity**, **flexibility**, and **performance optimizations** make it an ideal choice for anyone looking to create fast, clean, and efficient static websites. Whether you’re a designer, developer, or content creator, Eleventy provides the right tools to build exactly what you need without unnecessary complexity.
+### Заключение
+Простота, гибкость и оптимизация производительности делают Eleventy идеальным выбором для создания быстрых, чистых и эффективных статических сайтов. Будь вы дизайнером, разработчиком или автором — Eleventy даёт нужные инструменты без лишней сложности.
 
-If you’re looking for a static site generator that offers **complete control**, **speed**, and **easy configuration**, Eleventy is an excellent choice. Plus, with its seamless integration with platforms like Netlify, you can deploy your site with just a few clicks!
+Если вы ищете генератор, который предлагает **полный контроль**, **скорость** и **простую настройку**, Eleventy — отличный выбор. А с интеграцией с Netlify вы сможете публиковать сайт буквально в пару кликов.
 
-Give Eleventy a try and see how it can transform your website development process.
+Попробуйте Eleventy и посмотрите, как он может преобразить ваш процесс веб-разработки.
